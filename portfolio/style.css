@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+
+}
+.top {
+   background: url(img/anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+   top: 0;
+   bottom: 0;
+    z-index: -1;
+}
+.heading{
+    color: #fff;
+    z-index: 2;   
+}
+.heading h2{letter-spacing: 5px;
+    text-transform: capitalize;
+    color: #f2f2f2;
+    margin-top: 10px;
+}
+.right-menu{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+
+}
+.menu-item li{
+padding: 15px;
+}
+.menu-item a{letter-spacing: 5px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 500;
+}
+.menu-item :active{
+    text-decoration: underline;
+    color: rgb(143, 143, 26);
+}
+.menu-item :hover{
+    transition: 0.4s;
+    color: tomato;
+    font-size: 17px;
+}
+/*middle part*/
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:100px 200px 0 0;
+    text-transform: capitalize;
+}
+.intro-info {border-left: 5px solid ;
+    line-height: 40px;
+}
+.intro-info p{
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.intro-info h1{letter-spacing: 10px;
+font-weight: 500;
+}
+.intro-info h4{
+    font-weight: 500;
+   letter-spacing: 20px;
+}
+.download{
+   
+    border-radius: 0;
+   
+}
+.download:hover{
+   background: #dc3545;
+    transition: 0.5s;
+}
+/*about section*/
+.about {overflow: hidden;
+    margin: 0;
+padding: 0;
+
+}
+.about-list li {padding: 0px 40px 40px 0;
+ font-size: 20px;
+}
+.about-list a {
+    color:black;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+
+@media(max-width:576px){
+    
+    .intro-info {
+        text-align: center;
+        overflow-y: auto;
+}
+.intro-info h1{
+font-size: 50px;
+}
+.heading h2{
+    margin-top: 25px;
+    margin-left: 16px;
+}
+.about h1{
+    font-size: 35px;
+}
+.image {
+    margin: 0;
+    padding: 0;
+}
+.about-main {
+    text-align: center;
+}
+.about-list {
+    text-align: center  ;
+}
+}
